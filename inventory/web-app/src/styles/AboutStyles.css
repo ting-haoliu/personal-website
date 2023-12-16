@@ -1,0 +1,61 @@
+.about {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+
+    background-color: goldenrod;
+    /* height: 38rem; */
+}
+
+.about__title {
+    font-size: 4rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+.about__panel {
+    display: flex;
+    flex-direction: row;
+
+    margin: 1rem auto;
+    padding: 1rem 0.5rem;
+
+    width: 80%;
+    border: 2px solid wheat;
+    border-radius: 1.5rem;
+}
+
+.about__panel--img {
+    width: 25%;
+    min-width: 15rem;
+    height: 25%;
+
+    margin: auto;
+    padding: 0.5rem;
+
+    border-radius: 40px;
+}
+
+.about__panel--textContainer {
+    align-self: center;
+}
+
+.about__panel--text {
+    padding: 1rem;
+
+    font-size: 1.5rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+/* media */
+@media(max-width:43rem) {
+    .about__panel {
+        flex-direction: column;
+    }
+
+    .about__panel--img {
+        width: 30%;
+        min-width: 15rem;
+        height: 30%;
+    }
+}

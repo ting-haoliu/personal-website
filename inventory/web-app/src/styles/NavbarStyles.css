@@ -1,0 +1,122 @@
+.navbar__list {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar__item {
+    padding: 1rem;
+}
+
+.navbar__link {
+    padding: 0.5rem;
+
+    color: white;
+}
+
+.navbar__link:hover {
+    background-color: rgb(80, 80, 238);
+
+    border-radius: 0.5rem;
+}
+
+
+.menu-icon {
+    display: none;
+    padding: 1rem;
+
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+
+/* below CSS adapted from https://css.gg/ under the MIT License */
+.gg-menu {
+    transform: scale(var(--ggs, 1))
+}
+
+.gg-menu,
+.gg-menu::after,
+.gg-menu::before {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    width: 20px;
+    height: 2px;
+    border-radius: 3px;
+    background: currentColor
+}
+
+.gg-menu::after,
+.gg-menu::before {
+    content: "";
+    position: absolute;
+    top: -6px
+}
+
+.gg-menu::after {
+    top: 6px
+}
+
+.gg-close {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs, 1));
+    width: 22px;
+    height: 22px;
+    border: 2px solid transparent;
+    border-radius: 40px
+}
+
+.gg-close::after,
+.gg-close::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 16px;
+    height: 2px;
+    background: currentColor;
+    transform: rotate(45deg);
+    border-radius: 5px;
+    top: 8px;
+    left: 1px
+}
+
+.gg-close::after {
+    transform: rotate(-45deg)
+}
+
+
+
+/* media */
+@media(max-width: 43rem) {
+    .menu-icon {
+        display: block;
+
+        cursor: pointer;
+    }
+
+    .navbar__list {
+        flex-direction: column;
+        display: none;
+
+        position: absolute;
+        top: 4rem;
+        left: 0;
+
+        width: 100%;
+        background-color: black;
+
+        text-align: center;
+    }
+
+    .navbar__list.active {
+        display: block;
+    }
+
+    .navbar__link {
+        display: block;
+    }
+}

@@ -1,0 +1,46 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    width: 100%;
+
+    padding: 0.5rem 1rem;
+
+    background-color: black;
+    height: 4rem;
+}
+
+.header__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-img {
+    width: 2.5rem;
+    height: 2.5rem;
+
+    border-radius: 2rem;
+}
+
+.header__title {
+    padding: 0.5rem;
+
+    color: white;
+    font-size: large;
+}
+
+.header__skiplink {
+    position: absolute;
+    top: -40px;
+}
+
+.header__skiplink:focus {
+    top: 0;
+
+    background-color: brown;
+    color: white;
+}
